@@ -14,6 +14,9 @@
 		F0837F892737DE2800BD8322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0837F882737DE2800BD8322 /* Assets.xcassets */; };
 		F0837F8C2737DE2800BD8322 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0837F8A2737DE2800BD8322 /* LaunchScreen.storyboard */; };
 		F0837F8F2737DE2800BD8322 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0837F8E2737DE2800BD8322 /* main.m */; };
+		F0ED209F273D5B0B0090B734 /* HumansBeing.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED209E273D5B0B0090B734 /* HumansBeing.m */; };
+		F0ED20A2273D5B5B0090B734 /* ViewInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED20A1273D5B5B0090B734 /* ViewInformation.m */; };
+		F0ED20A9273E5FB20090B734 /* Clothes.m in Sources */ = {isa = PBXBuildFile; fileRef = F0ED20A8273E5FB20090B734 /* Clothes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		F0837F8B2737DE2800BD8322 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0837F8D2737DE2800BD8322 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0837F8E2737DE2800BD8322 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F0ED209D273D5B0B0090B734 /* HumansBeing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HumansBeing.h; sourceTree = "<group>"; };
+		F0ED209E273D5B0B0090B734 /* HumansBeing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HumansBeing.m; sourceTree = "<group>"; };
+		F0ED20A0273D5B5B0090B734 /* ViewInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewInformation.h; sourceTree = "<group>"; };
+		F0ED20A1273D5B5B0090B734 /* ViewInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewInformation.m; sourceTree = "<group>"; };
+		F0ED20A7273E5FB20090B734 /* Clothes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clothes.h; sourceTree = "<group>"; };
+		F0ED20A8273E5FB20090B734 /* Clothes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clothes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 		F0837F7B2737DE2300BD8322 /* GestureTask */ = {
 			isa = PBXGroup;
 			children = (
+				F0ED20A3273D5B660090B734 /* CustomClass */,
 				F0837F7C2737DE2400BD8322 /* AppDelegate.h */,
 				F0837F7D2737DE2400BD8322 /* AppDelegate.m */,
 				F0837F7F2737DE2400BD8322 /* SceneDelegate.h */,
@@ -74,6 +84,19 @@
 				F0837F8E2737DE2800BD8322 /* main.m */,
 			);
 			path = GestureTask;
+			sourceTree = "<group>";
+		};
+		F0ED20A3273D5B660090B734 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED209D273D5B0B0090B734 /* HumansBeing.h */,
+				F0ED209E273D5B0B0090B734 /* HumansBeing.m */,
+				F0ED20A0273D5B5B0090B734 /* ViewInformation.h */,
+				F0ED20A1273D5B5B0090B734 /* ViewInformation.m */,
+				F0ED20A7273E5FB20090B734 /* Clothes.h */,
+				F0ED20A8273E5FB20090B734 /* Clothes.m */,
+			);
+			path = CustomClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0837F842737DE2400BD8322 /* ViewController.m in Sources */,
+				F0ED20A2273D5B5B0090B734 /* ViewInformation.m in Sources */,
 				F0837F7E2737DE2400BD8322 /* AppDelegate.m in Sources */,
+				F0ED209F273D5B0B0090B734 /* HumansBeing.m in Sources */,
 				F0837F8F2737DE2800BD8322 /* main.m in Sources */,
 				F0837F812737DE2400BD8322 /* SceneDelegate.m in Sources */,
+				F0ED20A9273E5FB20090B734 /* Clothes.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +204,7 @@
 		F0837F902737DE2800BD8322 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = "$(USER)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -237,6 +264,7 @@
 		F0837F912737DE2800BD8322 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALTERNATE_OWNER = "$(USER)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

@@ -6,6 +6,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HumansBeing.h"
+#import "ViewInformation.h"
 
 @interface ViewController : UIViewController
 
